@@ -30,16 +30,18 @@ let tlThree = gsap.timeline({
 
 tlOne.from(".line-one span",{
   y: 500,
-  stagger: 0.2,
-  scrub: true,
-}).to(".container",{
+  stagger: 0.5,
+})
+.to(".container",{
   backgroundColor:"yellow"
-}).from('.sun',{
+})
+.from('.sun',{
   x: 400,
-  scrub: true,
-}).to(".container",{
+})
+.to(".container",{
   backgroundColor:"white"
-}).to('.sun',{
+})
+.to('.sun',{
   x:-1400
 }, "<")
 .to('.line-one span',{
